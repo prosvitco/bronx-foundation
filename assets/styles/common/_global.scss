@@ -1,0 +1,424 @@
+body {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+
+  > .wrap {
+    padding-top: 90px;
+    padding-bottom: 0px;
+
+    &.container {
+      padding-top: 140px;
+      padding-bottom: 60px;
+    }
+  }
+
+}
+
+
+
+a, .btn {
+  @include transition;
+}
+
+.btn {
+    font-family: $font-family-headings;
+    padding: 12px 48px;
+}
+
+/* EOF HERO */
+
+.callout {
+    background-color: #30373b;
+    color: #a9a9a9;
+    margin-bottom: 30px;
+    padding: 29px;
+
+    .fa {
+        display: block;
+    }
+    .fa-commenting:before {
+        font-size: 40px;
+        color: #2B752B;
+        display: block;
+        text-align: center;
+    }
+
+    .heading, .subscribe-heading {
+        color: white;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .subscribe-text {
+        font-size: 0.875em;
+        line-height: 1.42857em;
+        text-align: center;
+        margin-bottom: 15px!important;
+    }
+
+    .form-group {
+        margin-top: 0px;
+    }
+    .form-control {
+        width: 100%;
+        height: 42px;
+        border-radius: 3px;
+        font-size: 0.840em;
+        font-family: 'Brandon', Helvetica, sans-serif;
+    }
+
+    .marketing-label {
+        display: none;
+    }
+
+    .marketing-input-wrapper {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+
+    }
+
+  &.callout-scott {
+    background-color: rgba(6, 138, 123, 0.07);
+    padding-bottom: 0;
+    border-bottom: 2px solid rgba(6, 138, 123, 0.11);
+
+    .heading {
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.81);
+        margin-top: 40px;
+      text-align: left;
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.74);
+    }
+
+    img {
+      margin-top: -80px;
+      margin-left: -40px;
+    }
+
+    blockquote {
+      margin-bottom: 15px;
+      font-size: 17px;
+      color: rgba(0, 0, 0, 0.63);
+      font-weight: bold;
+
+      &.right {
+        padding: 0 30px 0 0;
+        border-right: 1px solid rgba(0,0,0,.1);
+        border-left: 0;
+
+        &:before {
+          left: -125px;
+        }
+      }
+
+    }
+  }
+
+
+}
+
+
+.list-articles {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+
+     a {
+        &:before {
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          content: "\f15c";
+          padding-right: 15px;
+
+        }
+
+     }
+
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .lead {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
+//.tyest-delete{
+//  text-align: center;
+//  background: #ebebeb;
+//  height: 300px;
+//  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+//  padding: 40px 20px;
+//  border-top: 5px solid #1fa947;
+//}
+
+
+/* Flat curriculumn
+-------------------------------------------------------------- */
+ul.curriculum {
+  list-style: none;
+  padding-left: 0;
+}
+ul.curriculum li.section {
+  margin-bottom: 30px;
+  border: 1px solid #e5e5e5;
+  padding: 38px 28px 14px;
+  background: #fdfdfd;
+}
+
+ul.curriculum li.section .section-content {
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.curriculum li.section .section-title {
+  margin-bottom: 26px;
+  word-spacing: 1px;
+  letter-spacing: -.2px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+ul.curriculum li ul.section-content li.course-lesson {
+  border-top: 1px solid #e5e5e5;
+  line-height: 65px;
+  counter-increment: step-counter;
+}
+
+ul.curriculum li ul.section-content li.course-lesson:before {
+  content: counter(step-counter) ".";
+  margin-right: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  font-family: poppins, sans-serif;
+}
+
+ul.curriculum li ul.section-content li.course-lesson i {
+  font-size: 13px;
+  color: #697ea4;
+  padding-right: 9px;
+}
+
+ul.curriculum li ul.section-content li.course-lesson .index.index1 {
+  padding-right: 60px;
+}
+
+ul.curriculum li ul.section-content li.course-lesson .lesson-title {
+  padding-right: 12px;
+}
+
+ul.curriculum li ul.section-content li.course-lesson .lesson-preview {
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+  line-height: 24px;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: #428bdc;
+  padding:0 12px;
+}
+
+ul.curriculum li ul.section-content li.course-lesson span.lesson-preview {
+  background: #c3c3c3;
+  margin-left: 4px;
+  padding-right: 16px;
+}
+
+ul.curriculum li ul.section-content li.course-lesson a.lesson-preview:hover {
+  background: #ffaa30;
+}
+
+ul.curriculum li ul.section-content li.course-lesson .meta {
+  float: right;
+}
+
+ul.curriculum li ul.section-content li.course-lesson .fr {
+  padding-right: 12px;
+  float: right;
+  color: rgba(0, 0, 0, 0.43);
+  font-size: 14px;
+}
+
+ul.curriculum li ul.section-content li.course-lesson .fr span,
+ul.curriculum li ul.section-content li.course-lesson .fr a {
+  position: relative;
+  padding-left: 17px;
+  margin-left: 15px;
+  color: inherit;
+  font-weight:bold;
+}
+
+ul.curriculum li ul.section-content li.course-lesson .fr span:before,
+ul.curriculum li ul.section-content li.course-lesson .fr a:before {
+  font-family: FontAwesome;
+  font-size:13px;
+  left: 0;
+  position: absolute;
+}
+
+ul.curriculum li ul.section-content li.course-lesson .attrachment:before {
+  content: "\f15c";
+}
+
+ul.curriculum li ul.section-content li.course-lesson .attrachment-video:before {
+  content: "\f144";
+}
+
+ul.curriculum li ul.section-content li.course-lesson .duration:before {
+  content: "\f017";
+}
+
+ul.curriculum li ul.section-content li.course-lesson .question:before {
+  content: "\f059";
+}
+
+/* е НЕ ТРЕБА ТРЕБА БУДЕ ПОЧИСТИТИ ЩОБ Р не виводилися*/
+ul.section-content p {
+  display: none;
+}
+/* е НЕ ТРЕБА ТРЕБА БУДЕ ПОЧИСТИТИ ЩОБ Р не виводилися*/
+
+/* BOF HELPERS */
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;;
+}
+
+.mb-60 {
+  margin-bottom: 60px !important;;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;;
+}
+
+.mt-30 {
+  margin-top: 30px !important;;
+}
+
+.mt-40 {
+  margin-top: 40px !important;;
+}
+
+.mt-60 {
+  margin-top: 60px !important;;
+}
+
+
+
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pb-10 {
+  padding-bottom: 10px !important;
+}
+
+.pb-20 {
+  padding-bottom: 20px !important;;
+}
+
+.pb-30 {
+  padding-bottom: 30px !important;;
+}
+
+.pb-40 {
+  padding-bottom: 40px !important;;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pt-10 {
+  padding-top: 10px !important;
+}
+
+.pt-20 {
+  padding-top: 20px !important;;
+}
+
+.pt-30 {
+  padding-top: 30px !important;;
+}
+
+.pt-40 {
+  padding-top: 40px !important;;
+}
+
+@media (min-width: $screen-md-min) {
+  .prosvit-col-md-3 {
+    width: 25% !important;
+  }
+  .prosvit-col-md-4 {
+    width: 33.3333333333% !important;
+  }
+  .prosvit-col-md-5 {
+    width: 41.6666666667% !important;
+  }
+  .prosvit-col-md-7 {
+    width: 58.3333333333% !important;
+  }
+  .prosvit-col-md-8 {
+    width: 66.6666666667% !important;
+  }
+  .prosvit-col-md-9 {
+    width: 75% !important;
+  }
+}
+
+
+.text-center-right {
+  text-align: center;
+  @media (min-width: $screen-md-min) {
+    text-align: right;
+    
+  }
+}
+
+/* EOF HELPERS */
+
+
+

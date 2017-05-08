@@ -1,0 +1,126 @@
+.section {
+
+    &.custom-heading {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+        @media (min-width: $screen-md-min) {
+           margin-top:-200px; 
+        }
+     
+        .wysiwyg-editor {
+         padding-left: 100px;
+         padding-right: 100px;
+         text-align: center;
+            .icon {
+                margin-bottom:30px;
+             i.fa.fa-comments-o {
+            color: #ffffff;
+          font-size: 55px;
+          border-radius: 100%;
+          -moz-border-radius: 100%;
+          -webkit-border-radius: 100%;
+          line-height: 96.25px;
+          height: 96.25px;
+          width: 96.25px;
+          border: 1px solid #3da46b;
+          text-align: center;
+          background: linear-gradient(to bottom,#6fd69d 0%,#51b87f 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6fd69d', endColorstr='#51b87f',GradientType=0 );
+           }
+            }
+         
+        }
+     }
+    &.more {
+      max-width: 1100px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 120px;
+        a {
+        color: #000;
+            &:hover {
+               color: #394b5d;
+               text-decoration: none; 
+               }
+           }
+      }
+    &.listing {
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 10px;
+        
+        .text-right {
+         text-align: left;
+         padding-right: 120px;
+            .wysiwyg-editor {
+             padding-top: 20px;
+            }
+         }
+        .image-left {
+         padding-left: 120px;
+            img.alignnone {
+             float: right;
+             width: 100%;
+             height: auto;
+             }
+         }
+    }
+    &.listing2 {
+       max-width: 1100px;
+       margin-left: auto;
+       margin-right: auto; 
+        .text-left {
+         padding-left: 120px;
+         text-align: left;
+            .wysiwyg-editor {
+             padding-top: 30px;
+            }
+         }
+        .image-right {
+         padding-right: 120px;
+            img.alignnone {
+             float: left;
+             width: 100%;
+             height: auto;
+            }
+        }
+    }
+    &.headings {
+    text-align: center;
+}
+    
+    &contact {
+      div#left {
+      width: 45%;
+      float: left;
+      margin-right: 10%;
+      }
+      div#right {
+      width: 45%;
+      float: left;
+      }
+      textarea {
+      width: 100%;
+      }
+      .wpcf7-submit {
+       border-color: #1fa947;
+       background: #1fa947;
+       font-size: 16px;
+       line-height: 16px;
+       letter-spacing: .02em;
+       min-width: 250px;
+       font-style: italic;
+       outline: none;
+       border-radius: 30px;
+       color: #fff;
+       padding: 14px 12px 17px;
+       margin: 30px 0;
+       border: none;
+       }
+       address {
+       padding-left: 100px;
+       }
+}
+}
